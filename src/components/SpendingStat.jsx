@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComposedChart, Area, Line, XAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { ComposedChart, Area, Line, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import classes from '../styles/SpendingStat.module.css'
 
 const data = [
