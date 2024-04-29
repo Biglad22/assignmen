@@ -1,0 +1,275 @@
+.homeWrapper{
+    background-color: white;
+    padding: 7.5vmin !important;
+    justify-content: space-between;
+    height: fit-content;
+    overflow: auto;
+}
+
+
+/*====== top bar ======*/
+.topBarWapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+}
+
+/*==== search area =======*/
+.searchArea{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    width: 60%;
+}
+
+.searchArea a{
+    color: var(--emphasis-h-text);
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+    padding: 4px;
+    flex:  0 0 content ;
+}
+
+
+/*====== search input =====*/
+.searchinput{
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--container-color);
+    border-radius: 6px;
+    flex: 1;
+}
+
+.searchinput img{
+    max-width: 16px;
+    max-height: 16px;
+    flex: 0 1 content;
+    padding: 6px;
+    box-sizing: content-box;
+}
+
+.searchinput input{
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: unset;
+}
+
+.searchinput input::placeholder{
+    color: var(--emphasis-l-text);
+    text-transform: capitalize;
+}
+
+.searchinput input:focus{
+    outline: none;
+    border: none;
+}
+
+.searchAreaUserProfile img{
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: top;
+    -o-object-fit: cover;
+    -o-object-position: top;
+}
+
+/* === min graph styling ===== */
+.miniGraph{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    box-shadow: var(--shadow-box);
+    max-height: min-content;
+    border-radius: 8px;
+}
+
+.miniGraphCollection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    max-height: min-content;
+    align-items: start;
+}
+
+.miniGraphCollection div{
+    flex: 1;
+    max-height: fit-content;
+}
+
+.miniGraph div:nth-child(1){
+    flex: 0 1 30%;
+}
+
+.miniGraphTitle{
+    height: fit-content;
+}
+
+.miniGraphTitle small{
+    font-weight: 400;
+    text-transform: uppercase;
+    color:var(--emphasis-l-text);
+}
+
+.miniGraphTitle p{
+    font-weight: 600;
+    color: var(--emphasis-h-text);
+}
+
+
+
+/*======== mainbody styling ========*/
+.mainBody, .firstHalf, .firstHalfBottom, .secHalf {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+    gap:7.5vmin;
+    height:fit-content;
+    height: auto;
+}
+
+.firstHalf{
+    flex: 1;
+    gap:2.5vmin;
+    
+}
+
+.firstHalfBottom{
+    align-items: stretch;
+    height: fit-content;
+    gap:5vmin;
+}
+
+.firstHalfBottom div{
+    flex: 1;
+
+}
+
+.firstHalfBottom div:nth-child(2){
+    height: fit-content;
+}
+
+.firstHalfBottom div:nth-child(1){
+    height: auto;
+}
+
+.secHalf {
+    flex-direction: column;
+    gap:5vmin;
+    width: fit-content;
+    padding: 5vmin;
+    background-color: var(--container-color);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secHalf > .secHalfCard > h6{
+    color: var(--emphasis-h-text);
+    text-transform: capitalize;
+    margin-block: 16px;
+}
+
+.secHalf > .secHalfCard > img{
+    width: 15vw;
+}
+
+
+/* ==== media queries ========== */
+
+@media screen and (max-width:950px) {
+    .searchArea a{
+        display: none;
+    }
+
+    .mainBody{
+        flex-direction: column;   
+    }
+
+    .secHalf{
+        flex: 1;
+        width: 100%;
+    }
+
+    .secHalf > .secHalfCard > h6{
+        display: block;
+        text-align: center;
+    }
+
+    .secHalf > .secHalfCard > img{
+        width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:680px){
+    .miniGraphCollection{
+        max-width: 100%;
+        overflow: auto;
+        flex-wrap: nowrap;
+    }
+
+    .miniGraph{
+        flex-wrap: nowrap;
+        width: fit-content;
+    }
+
+    .miniGraph div:nth-child(1){
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:540px){
+    .searchinput{
+        flex: 0 1 40%;
+    }
+    .searchinput input{
+        flex: 0 1 60%;
+        max-width: 60%;
+    }
+
+    .firstHalfBottom{
+        flex-direction: column;
+    }
+    .firstHalfBottom div:nth-child(1){
+        height: 35vmax;
+        min-height: 35vmax;
+    }
+    .firstHalfBottom div:nth-child(2){
+        flex: 0 1 content;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .secHalf > .secHalfCard > img{
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:360px){
+    .secHalf > .secHalfCard > img{
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

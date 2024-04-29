@@ -1,0 +1,74 @@
+
+/*transaction chip*/
+.transcChipWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+    align-items: center;
+}
+
+.transcChipWrapper img{
+    width: 24px;
+    height: 24px;
+    flex: 0 1 content;
+    border-radius: 8px;
+}
+
+.transcSubDetail{
+    flex: 1;
+}
+
+.transcSubDetail > p{
+    color: var(--emphasis-h-text);
+    text-transform: capitalize;
+    display: block;
+}
+
+.transcSubDetail small{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--emphasis-l-text);
+    flex: content;
+    display: block;
+}
+
+.transcChipWrapper > p{
+    text-transform: uppercase;
+    color: var(--emphasis-h-text);
+    flex: content;
+    max-width: fit-content;
+}
+
+
+/*====== transaction group wrapper ======*/
+.transHistoryWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.transHistoryHeader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.transHistoryHeader button{
+    background-color: var(--tertiary-color);
+    width: fit-content;
+    height: fit-content;
+    padding: 4px;
+    line-height: 0;
+    border-radius: 8px;
+    border:none
+}
+
+.transHistoryWrapper h6{
+    color: var(--emphasis-h-text);
+    text-transform: capitalize;
+}
+

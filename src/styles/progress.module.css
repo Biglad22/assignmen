@@ -1,0 +1,35 @@
+@import '../index.css';
+
+.indicator{
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indicator div{
+    height: 70%;
+    width: 70%;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--shadow-box);
+}
+
+.indicator div h5{
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--emphasis-h-text);
+}
+
+@media screen and (max-width:950px) {
+    
+}

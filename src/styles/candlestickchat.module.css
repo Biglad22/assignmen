@@ -1,0 +1,46 @@
+@import '../index.css';
+
+.mainWrapper{
+    width: 100%;
+    min-height: 35vh;
+    padding: 2.4vmax;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5vmin;
+    border-radius: 16px;
+    background-color: var(--container-color);
+}
+
+.headerWrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block:8px;
+    justify-content: space-between;
+    align-items: center;
+    flex:0 1 content;
+}
+
+.headerWrapper button{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 8px;
+    line-height: normal;
+    align-items: center;
+    gap:8px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 16px;
+    color: var(--primary-color);
+}
+
+.mainBodyWrapper{
+    flex:1;
+}
+
+@media screen and (max-width:680px){
+    .mainWrapper{
+        min-height: 50vmax;
+    }
+}

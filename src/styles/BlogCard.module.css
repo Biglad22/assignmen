@@ -1,0 +1,97 @@
+@import '../index.css';
+
+.cardWrapper{
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: var(--shadow-box);
+    border-radius: 8px;
+}
+
+.cardWrapper > h6{
+    color: var(--emphasis-h-text);
+}
+
+.blogPosterDetail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:8px;
+    max-width:max-content;
+}
+
+.blogPosterDetail > img{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+    -o-object-fit: cover;
+    -o-object-position: top;
+}
+
+.cardBlogDetails{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogPosterName p{
+    font-weight: 500;
+    color: var(--emphasis-h-text);
+}
+
+.blogPosterName small{
+    font-weight: 400;
+    color: var(--emphasis-l-text);
+}
+
+.chipWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:4px;
+    align-items: center;
+}
+
+.chipWrapper img{
+    width: 16px;
+    height: 16px;
+}
+.chipWrapper small{
+    font-weight: 400;
+}
+.chipWrapper{
+    text-transform: capitalize;
+}
+
+
+.cardBlogActionArea{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:4px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cardBlogActionArea button{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:4px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 24px;
+    background-color: var(--primary-color);
+    border: none;
+    text-transform: capitalize;
+    color: var( --container-color);
+}
+

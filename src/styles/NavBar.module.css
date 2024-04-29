@@ -1,0 +1,65 @@
+@import '../index.css';
+
+.navWrapper{
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-block: 4vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vmax;
+    padding:8px;
+    position: relative;
+    background-color: var(--primary-color);
+    width: fit-content;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.logo{
+    width: 24px;
+    height: auto;
+    flex: 0 1 content;
+}
+
+.link{
+    padding: 1.6vmax;
+    border-radius: 10px;
+    line-height: 0;
+    transition: 'all 0.5s ease'
+}
+
+
+.active{
+    position : relative;
+    transform: translateX(50%);
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0 1px #F5F5FC;
+    transition: all 0.5s ease;
+    z-index:10;
+    transition: 'all 0.5s ease';
+}
+
+
+@media screen and (max-width:680px){
+    .navWrapper{
+        padding-block: 1vh;
+        width: 100%;
+    }
+
+    .active{
+        transform: translate(0, -50%);
+    }
+    .logo{
+        display: none;
+    }
+
+    .linkWrapper{
+        flex-direction: row;
+        flex:  0 1 content;
+    }
+}

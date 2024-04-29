@@ -1,0 +1,26 @@
+@import '../index.css';
+
+.mainWrapper{
+    min-height: 100% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+    padding: 2.4vmax;
+    border-radius: 16px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow-box);
+}
+
+.mainWrapper h6{
+    flex: 0 1 content; 
+}
+
+.mainWrapper div{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+

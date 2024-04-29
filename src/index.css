@@ -1,3 +1,33 @@
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  --primary-color:#3326AE;
+  --secondary-color: #ffffff;
+  --tertiary-color:#FF0000;
+  --container-color:#F5F5FC;
+
+  --emphasis-h-text :#000013;
+  --emphasis-l-text :#C4BDD5;
+
+
+
+  --shadow-box :2px 2px 2px 3px #F5F5FC;
+
+  --card-shadow : /* For horizontal shadow */
+  -10px 0px 15px -5px #a435fe99, /* Start with #A435FE at a slight offset to the left */
+  10px 0px 15px -5px #A435FE99, /* End with #A435FE at a slight offset to the right */
+  /* For vertical shadow */
+  0px -10px 15px -5px #A435FE99, /* Start with #A435FE at a slight offset to the top */
+  0px 10px 15px -5px #FC212199, /* End with #A435FE at a slight offset to the bottom */
+  /* Add the red highlight */
+  0px 0px 15px -5px #FC212199; 
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +35,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
 }
+
+
+/* ========= Body styling ======== */
+html {
+  font-size: calc(10px + 0.8vmin);
+}
+
+/* ======= font sizing ============ */
+/* h1 */
+h1 {
+  font-size: 2.55rem !important; /* Base font size for h1 */
+}
+
+/* h2 */
+h2 {
+  font-size: 2.25rem !important; /* Base font size for h2 */
+}
+
+/* h3 */
+h3 {
+  font-size: 1.75rem !important; /* Base font size for h3 */
+}
+
+/* h4 */
+h4 {
+  font-size: 1.5rem !important; /* Base font size for h4 */
+}
+
+/* h5 */
+h5 {
+  font-size: 1.25rem !important; /* Base font size for h5 */
+}
+
+/* h6 */
+h6 {
+  font-size: 1.125rem !important; /* Base font size for h6 */
+}
+
+/* p */
+p, a, button, li {
+  font-size: 1rem !important; /* Base font size for paragraphs */
+  line-height: 150%;
+}
+
+/* small */
+small {
+  font-size: 0.8rem !important; /* Base font size for small text */
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
